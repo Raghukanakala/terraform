@@ -49,9 +49,7 @@ $ aws ec2 describe-instances
 [centos@ip-172-31-36-88 ~]$ aws ec2 describe-instances --output table
 
 
-terraform init
-terraform plan
-terraform apply
+terraform init;terraform plan;terraform apply;terraform  destroy
 
 
 
