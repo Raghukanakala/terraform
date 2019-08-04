@@ -35,9 +35,23 @@ sudo yum --enablerepo=extras install epel-release
 sudo yum install python2-pip -y
 
 sudo pip install awscli 
+-- Configure the AWS configuration 
+$ aws configure
+    AWS Access Key ID [None]: <>
+    AWS Secret Access Key [None]: <>
+    Default region name [None]: <us-east-2>
+    Default output format [None]: 
+Provide all above details 
+
+It will give all the details of 
+$ aws ec2 describe-instances
+--Out put in table format: 
+[centos@ip-172-31-36-88 ~]$ aws ec2 describe-instances --output table
 
 
-
+terraform init
+terraform plan
+terraform apply
 
 
 
